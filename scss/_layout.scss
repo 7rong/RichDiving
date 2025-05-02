@@ -1,0 +1,495 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 85px;
+
+  @include mobile{
+    scroll-margin-top: 165px;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body{
+  font-family: $font-family-tc;
+  background-color: $color-light;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.text_highlight {
+  color: $color-warning;
+  font-weight: bold;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.fw-bold{
+  font-weight: bold;
+}
+
+body {
+  background-color: $color-light;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background: none;
+  line-height: 80px;
+  z-index: 2;
+  transition: all .3s;
+  
+  &.show_color{
+    background: $color-primary;
+    box-shadow: 2px 2px 8px $color-primary;
+  }
+  
+  h1 a {
+    font-family: $font-family-madimi;
+    margin: 0 15px;
+    font-size: $font-size-sl;
+    color: $color-secondary;
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: sub;
+    width: 285px;
+    height: 80px;
+    background: url('../img/logo.png') no-repeat center;
+    background-size: contain;
+  }
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+.nav {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
+  color: $color-darkblue;
+  transition: all .3s;
+
+  &.change_color{
+    color: $color-light;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    min-width: 85px;
+    height: 100%;
+    padding: 0 10px;
+    color: inherit;
+    font-size: $font-size-m;
+    font-weight: 500;
+    text-align: center;
+
+    &:hover{
+      color: $color-warning;
+    }
+
+    @include pad{
+      min-width: 60px;
+    }
+
+    @include mobile{
+      line-height: 60px;
+    }
+  }
+
+  @include pad{
+    width: 100%;
+  }
+}
+
+.home_banner {
+  position: relative;
+  height: 600px;
+  background: url('../img/banner_home.jpg')no-repeat center fixed;
+  background-size: cover;
+}
+
+.banner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+
+  p{
+    color: $color-light;
+  }
+
+  h2 {
+    font-size: $font-size-l;
+    color: $color-light;
+    line-height: 50px;
+  }
+}
+
+.home_intro_text{
+  margin-right: 30px;
+
+  h2 {
+    font-size: $font-size-l;
+    color: $color-darkblue;
+    line-height: 50px;
+  }
+
+  p{
+    line-height: 28px;
+    color: $color-darkblue;
+    font-size: $font-size-m;
+    margin-top: 15px;
+  }
+
+  @include mobile{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.home_intro_img{
+  width: 100%;
+  height: 300px;
+  background: url('../img/home_intro.jpg')no-repeat center;
+  background-size: contain;
+}
+
+.home_course{
+  background-color: $color-primary;
+
+  h2{
+    color: $color-light;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  h3{
+    font-size: $font-size-l;
+  }
+
+  h4{
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  h4::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid $color-secondary;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 30px;
+    border: 1px solid $color-secondary;
+
+    @include mobile{
+      flex-direction: column;
+      min-height: 600px;
+    }
+  }
+
+  .course_text{
+    width: 50%;
+    padding: 20px;
+    color: $color-light;
+
+    @include mobile{
+      height: 50%;
+      width: 100%;
+    }
+  }
+
+  .course_img{
+    width: 50%;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+
+    @include mobile{
+      height: 50%;
+      width: 100%;
+    }
+  }
+
+  .explore_img{
+    background-image: url('../img/explore.jpg');
+  }
+
+  .ow_img{
+    background-image: url('../img/ow.jpg');
+  }
+
+  .aow_img{
+    background-image: url('../img/aow.jpg');
+  }
+
+  .course_intro{
+    margin-top: 20px;
+  }
+
+  .course_btn{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid $color-secondary;
+    color: $color-light;
+    background-color: transparent;
+  }
+}
+
+#other{
+  h2{
+    text-align: center;
+    color: $color-primary;
+    margin-bottom: 30px;
+  }
+
+  a{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: $color-darkblue;
+  }
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 預設為三列 */
+  gap: 10px;
+  width: 100%;
+
+  @include mobile{
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid_item {
+  position: relative;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+
+  &::after{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #17415a88;
+    color: $color-light;
+    font-size: $font-size-l;
+    font-weight: bold;
+  }
+
+  &:hover::after{
+    display: inline-flex;
+  }
+
+  &.grid_1::after{
+    content: "Fun Dive(岸潛)";
+  }
+
+  &.grid_2::after{
+    content: "Fun Dive(船潛)";
+  }
+
+  &.grid_3::after{
+    content: "國內外潛旅";
+  }
+
+  &.grid_4::after{
+    content: "救援課程";
+  }
+
+  &.grid_5::after{
+    content: "潛水長課程";
+  }
+
+  &.grid_6::after{
+    content: "教練培訓計畫";
+  }
+
+  @include mobile{
+    &::after{
+      display: inline-flex;
+    }
+  }
+}
+
+.grid_1{
+  background-image: url('../img/fundive.jpg');
+}
+
+.grid_2{
+  background-image: url('../img/boat.jpg');
+}
+
+.grid_3{
+  background-image: url('../img/onboard.jpg');
+}
+
+.grid_4{
+  background-image: url('../img/rescue.jpg');
+}
+
+.grid_5{
+  background-image: url('../img/divemaster.jpg');
+}
+
+.grid_6{
+  background-image: url('../img/instructor.jpg');
+}
+
+#instructor{
+  background-color: $color-primary;
+}
+
+.instructor_intro_text{
+  width: 50%;
+  margin-right: 30px;
+
+  h2 {
+    font-size: $font-size-l;
+    color: $color-secondary;
+    line-height: 50px;
+  }
+
+  li{
+    margin-top: 5px;
+    color: $color-light;
+    font-size: $font-size-m;
+  }
+
+  @include mobile{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.instructor_intro_img{
+  width: 50%;
+  height: 300px;
+  background: url("../img/田田02.jpg") no-repeat center;
+  background-size: cover;
+
+  @include mobile{
+    width: 100%;
+  }
+}
+
+#faq{
+  h2{
+    text-align: center;
+    color: $color-primary;
+    margin-bottom: 30px;
+  }
+}
+
+.faq_container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq_q{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: $color-primary;
+  cursor: pointer;
+
+  i{
+    color: $color-secondary;
+    margin-right: 5px;
+  }
+}
+
+.faq_a{
+  margin-bottom: 20px;
+  color: #17415a88;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+}
+
+.faq_a.open {
+  max-height: 100px; /* 根據你內容長度調整，需足夠容納文字 */
+}
+
+footer {
+  background: $color-primary;
+  text-align: center;
+  color: $color-secondary;
+
+  h2{
+    font-size: 14vw;
+  }
+
+  p{
+    font-size: 20px;
+  }
+}

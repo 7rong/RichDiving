@@ -1,0 +1,469 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 85px;
+}
+@media (max-width: 767px) {
+  :target {
+    scroll-margin-top: 165px;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #eef0f2;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.text_highlight {
+  color: #EFA00B;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+body {
+  background-color: #eef0f2;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background: none;
+  line-height: 80px;
+  z-index: 2;
+  transition: all 0.3s;
+}
+header.show_color {
+  background: #17415a;
+  box-shadow: 2px 2px 8px #17415a;
+}
+header h1 a {
+  font-family: "Madimi One", sans-serif;
+  margin: 0 15px;
+  font-size: 50px;
+  color: #B7D1DA;
+}
+header .logo {
+  display: inline-block;
+  vertical-align: sub;
+  width: 285px;
+  height: 80px;
+  background: url("../img/logo.png") no-repeat center;
+  background-size: contain;
+}
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+.nav {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
+  color: #030027;
+  transition: all 0.3s;
+}
+.nav.change_color {
+  color: #eef0f2;
+}
+.nav a {
+  position: relative;
+  display: block;
+  min-width: 85px;
+  height: 100%;
+  padding: 0 10px;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.nav a:hover {
+  color: #EFA00B;
+}
+@media (max-width: 912px) {
+  .nav a {
+    min-width: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .nav a {
+    line-height: 60px;
+  }
+}
+@media (max-width: 912px) {
+  .nav {
+    width: 100%;
+  }
+}
+
+.home_banner {
+  position: relative;
+  height: 600px;
+  background: url("../img/banner_home.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+.banner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+}
+.banner_text p {
+  color: #eef0f2;
+}
+.banner_text h2 {
+  font-size: 28px;
+  color: #eef0f2;
+  line-height: 50px;
+}
+
+.home_intro_text {
+  margin-right: 30px;
+}
+.home_intro_text h2 {
+  font-size: 28px;
+  color: #030027;
+  line-height: 50px;
+}
+.home_intro_text p {
+  line-height: 28px;
+  color: #030027;
+  font-size: 16px;
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .home_intro_text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.home_intro_img {
+  width: 100%;
+  height: 300px;
+  background: url("../img/home_intro.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.home_course {
+  background-color: #17415a;
+}
+.home_course h2 {
+  color: #eef0f2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home_course h3 {
+  font-size: 28px;
+}
+.home_course h4 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.home_course h4::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #B7D1DA;
+}
+.home_course ul {
+  display: flex;
+  flex-direction: column;
+}
+.home_course li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 30px;
+  border: 1px solid #B7D1DA;
+}
+@media (max-width: 767px) {
+  .home_course li {
+    flex-direction: column;
+    min-height: 600px;
+  }
+}
+.home_course .course_text {
+  width: 50%;
+  padding: 20px;
+  color: #eef0f2;
+}
+@media (max-width: 767px) {
+  .home_course .course_text {
+    height: 50%;
+    width: 100%;
+  }
+}
+.home_course .course_img {
+  width: 50%;
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .home_course .course_img {
+    height: 50%;
+    width: 100%;
+  }
+}
+.home_course .explore_img {
+  background-image: url("../img/explore.jpg");
+}
+.home_course .ow_img {
+  background-image: url("../img/ow.jpg");
+}
+.home_course .aow_img {
+  background-image: url("../img/aow.jpg");
+}
+.home_course .course_intro {
+  margin-top: 20px;
+}
+.home_course .course_btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #B7D1DA;
+  color: #eef0f2;
+  background-color: transparent;
+}
+
+#other h2 {
+  text-align: center;
+  color: #17415a;
+  margin-bottom: 30px;
+}
+#other a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #030027;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 預設為三列 */
+  gap: 10px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid_item {
+  position: relative;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.grid_item::after {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 65, 90, 0.5333333333);
+  color: #eef0f2;
+  font-size: 28px;
+  font-weight: bold;
+}
+.grid_item:hover::after {
+  display: inline-flex;
+}
+.grid_item.grid_1::after {
+  content: "Fun Dive(岸潛)";
+}
+.grid_item.grid_2::after {
+  content: "Fun Dive(船潛)";
+}
+.grid_item.grid_3::after {
+  content: "國內外潛旅";
+}
+.grid_item.grid_4::after {
+  content: "救援課程";
+}
+.grid_item.grid_5::after {
+  content: "潛水長課程";
+}
+.grid_item.grid_6::after {
+  content: "教練培訓計畫";
+}
+@media (max-width: 767px) {
+  .grid_item::after {
+    display: inline-flex;
+  }
+}
+
+.grid_1 {
+  background-image: url("../img/fundive.jpg");
+}
+
+.grid_2 {
+  background-image: url("../img/boat.jpg");
+}
+
+.grid_3 {
+  background-image: url("../img/onboard.jpg");
+}
+
+.grid_4 {
+  background-image: url("../img/rescue.jpg");
+}
+
+.grid_5 {
+  background-image: url("../img/divemaster.jpg");
+}
+
+.grid_6 {
+  background-image: url("../img/instructor.jpg");
+}
+
+#instructor {
+  background-color: #17415a;
+}
+
+.instructor_intro_text {
+  width: 50%;
+  margin-right: 30px;
+}
+.instructor_intro_text h2 {
+  font-size: 28px;
+  color: #B7D1DA;
+  line-height: 50px;
+}
+.instructor_intro_text li {
+  margin-top: 5px;
+  color: #eef0f2;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .instructor_intro_text {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.instructor_intro_img {
+  width: 50%;
+  height: 300px;
+  background: url("../img/田田02.jpg") no-repeat center;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .instructor_intro_img {
+    width: 100%;
+  }
+}
+
+#faq h2 {
+  text-align: center;
+  color: #17415a;
+  margin-bottom: 30px;
+}
+
+.faq_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq_q {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #17415a;
+  cursor: pointer;
+}
+.faq_q i {
+  color: #B7D1DA;
+  margin-right: 5px;
+}
+
+.faq_a {
+  margin-bottom: 20px;
+  color: rgba(23, 65, 90, 0.5333333333);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+}
+
+.faq_a.open {
+  max-height: 100px; /* 根據你內容長度調整，需足夠容納文字 */
+}
+
+footer {
+  background: #17415a;
+  text-align: center;
+  color: #B7D1DA;
+}
+footer h2 {
+  font-size: 14vw;
+}
+footer p {
+  font-size: 20px;
+}/*# sourceMappingURL=all.css.map */
