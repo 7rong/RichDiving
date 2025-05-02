@@ -115,12 +115,7 @@ header {
   flex: 1;
   align-items: center;
   justify-content: end;
-  color: $color-darkblue;
-  transition: all .3s;
-
-  &.change_color{
-    color: $color-light;
-  }
+  color: $color-light;
 
   a {
     position: relative;
@@ -148,6 +143,10 @@ header {
 
   @include pad{
     width: 100%;
+  }
+
+  @include mobile{
+    justify-content:center;
   }
 }
 

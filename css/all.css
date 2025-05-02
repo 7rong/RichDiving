@@ -118,10 +118,6 @@ header .logo {
   flex: 1;
   align-items: center;
   justify-content: end;
-  color: #030027;
-  transition: all 0.3s;
-}
-.nav.change_color {
   color: #eef0f2;
 }
 .nav a {
@@ -151,6 +147,11 @@ header .logo {
 @media (max-width: 912px) {
   .nav {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .nav {
+    justify-content: center;
   }
 }
 
