@@ -153,7 +153,7 @@ header {
 .home_banner {
   position: relative;
   height: 600px;
-  background: url('../img/banner_home.jpg')no-repeat center fixed;
+  background: url('../img/banner_home.jpg')no-repeat center top;
   background-size: cover;
 }
 
@@ -161,8 +161,9 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 90%;
   transform: translate(-50%, -50%);
-  text-align: start;
+  text-align: center;
 
   p{
     color: $color-light;
