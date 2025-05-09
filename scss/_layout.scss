@@ -54,7 +54,7 @@ a {
 
 .flex{
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 
   @include mobile{
@@ -159,7 +159,7 @@ header {
 
 .banner_text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 90%;
   transform: translate(-50%, -50%);
@@ -170,14 +170,23 @@ header {
   }
 
   h2 {
-    font-size: $font-size-l;
+    font-size: 22px;
     color: $color-light;
     line-height: 50px;
+    font-weight: 300;
+  }
+
+  .banner_logo{
+    background: url('../img/logo_square_white.png') no-repeat center center;
+    background-size: contain;
+    height: 100px;
+    margin: 15px 0;
   }
 }
 
 .home_intro_text{
   margin-right: 30px;
+  width: 100%;
 
   h2 {
     font-size: $font-size-l;
@@ -201,6 +210,7 @@ header {
 .home_intro_img{
   width: 100%;
   height: 300px;
+  margin: auto 0;
   background: url('../img/home_intro.jpg')no-repeat center;
   background-size: contain;
 }
@@ -241,7 +251,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     margin-bottom: 30px;
     border: 1px solid $color-secondary;
 
@@ -250,7 +260,6 @@ header {
       min-height: 600px;
     }
   }
-
   .course_text{
     width: 50%;
     padding: 20px;
@@ -261,44 +270,183 @@ header {
       width: 100%;
     }
   }
+}
 
-  .course_img{
-    width: 50%;
-    flex: 1;
-    background-position: center;
-    background-size: cover;
+.course_img{
+  flex: 1;
 
-    @include mobile{
-      height: 50%;
-      width: 100%;
-    }
-  }
-
-  .explore_img{
-    background-image: url('../img/explore.jpg');
-  }
-
-  .ow_img{
-    background-image: url('../img/ow.jpg');
-  }
-
-  .aow_img{
-    background-image: url('../img/aow.jpg');
-  }
-
-  .course_intro{
-    margin-top: 20px;
-  }
-
-  .course_btn{
-    margin-top: 20px;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid $color-secondary;
-    color: $color-light;
-    background-color: transparent;
+  @include mobile{
+    flex: auto;
+    height: 300px;
+    width: 100%;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 40px;
+  text-align: center;
+  color: $color-light;
+
+  &::after {
+    content: '';
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-light;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &.ow_img01 {
+    background-image: url('../img/ow.jpg');
+  }
+  &.ow_img02 {
+    background-image: url('../img/ow02.jpg');
+  }
+  &.ow_img03 {
+    background-image: url('../img/ow03.jpg');
+  }
+  &.ow_img04 {
+    background-image: url('../img/ow04.jpg');
+  }
+  &.ow_img05 {
+    background-image: url('../img/ow05.jpg');
+  }
+  &.ow_img06 {
+    background-image: url('../img/ow06.jpg');
+  }
+  &.ow_img07 {
+    background-image: url('../img/ow07.jpg');
+  }
+  &.ow_img08 {
+    background-image: url('../img/ow08.jpg');
+  }
+  &.ow_img09 {
+    background-image: url('../img/ow09.jpg');
+  }
+  &.ow_img10 {
+    background-image: url('../img/ow10.jpg');
+  }
+  &.aow_img01{
+    background-image: url('../img/aow01.jpg');
+  }
+  &.aow_img02{
+    background-image: url('../img/aow02.jpg');
+  }
+  &.aow_img03{
+    background-image: url('../img/aow03.jpg');
+  }
+  &.aow_img04{
+    background-image: url('../img/aow04.jpg');
+  }
+  &.explore_img01{
+    background-image: url('../img/explore01.jpg');
+  }
+  &.explore_img02{
+    background-image: url('../img/explore02.jpg');
+  }
+  &.explore_img03{
+    background-image: url('../img/explore03.jpg');
+  }
+  &.explore_img04{
+    background-image: url('../img/explore04.jpg');
+  }
+  &.explore_img05{
+    background-image: url('../img/explore05.jpg');
+  }
+  &.explore_img06{
+    background-image: url('../img/explore06.jpg');
+  }
+  &.explore_img07{
+    background-image: url('../img/explore07.jpg');
+  }
+  &.instructor_img01{
+    background-image: url('../img/instructor01.jpg');
+    background-size:contain;
+  }
+  &.instructor_img02{
+    background-image: url('../img/instructor02.jpg');
+    background-size:contain;
+  }
+  &.instructor_img03{
+    background-image: url('../img/instructor03.jpg');
+    background-size:contain;
+  }
+  &.instructor_img04{
+    background-image: url('../img/instructor04.jpg');
+    background-size:contain;
+  }
+  &.instructor_img05{
+    background-image: url('../img/instructor05.jpg');
+    background-size:contain;
+  }
+  &.instructor_img06{
+    background-image: url('../img/instructor06.jpg');
+    background-size:contain;
+  }
+  &.travel_img01{
+    background-image: url('../img/travel01.jpg');
+  }
+  &.travel_img02{
+    background-image: url('../img/travel02.jpg');
+  }
+  &.travel_img03{
+    background-image: url('../img/travel03.jpg');
+  }
+  &.travel_img04{
+    background-image: url('../img/travel04.jpg');
+  }
+  &.travel_img05{
+    background-image: url('../img/travel05.jpg');
+  }
+  &.travel_img06{
+    background-image: url('../img/travel06.jpg');
+  }
+  &.travel_img07{
+    background-image: url('../img/travel07.jpg');
+  }
+}
+
+.explore_img{
+  background-image: url('../img/explore.jpg');
+}
+
+.aow_img{
+  background-image: url('../img/aow.jpg');
+}
+
+.course_intro{
+  margin-top: 20px;
+}
+
+.course_btn{
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid $color-secondary;
+  color: $color-light;
+  background-color: transparent;
+}
+
+.rescue_video {
+  flex: 1;
+
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mobile{
+    flex: auto;
+    height: 300px;
+  }
+}
+
 
 #other{
   h2{
@@ -431,17 +579,6 @@ header {
   }
 }
 
-.instructor_intro_img{
-  width: 50%;
-  height: 300px;
-  background: url("../img/田田02.jpg") no-repeat center;
-  background-size: cover;
-
-  @include mobile{
-    width: 100%;
-  }
-}
-
 #faq{
   h2{
     text-align: center;
@@ -481,15 +618,31 @@ header {
 }
 
 footer {
-  background: $color-primary;
+  background: url('../img/footer.jpg') no-repeat center center;
+  background-size: cover;
+  filter: blur(5%);
   text-align: center;
-  color: $color-secondary;
+  color: $color-light;
 
-  h2{
-    font-size: 14vw;
+  .footer_logo{
+    height: 100px;
+    background-image: url('../img/logo_square_white.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-bottom: 20px;
   }
 
   p{
     font-size: 20px;
+  }
+
+  .line_qrcode{
+    height: 50px;
+    background-image: url('../img/lineqrcode.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-top: 20px;
   }
 }

@@ -58,7 +58,7 @@ a {
 
 .flex {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 @media (max-width: 767px) {
@@ -164,7 +164,7 @@ header .logo {
 
 .banner_text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 90%;
   transform: translate(-50%, -50%);
@@ -174,13 +174,21 @@ header .logo {
   color: #eef0f2;
 }
 .banner_text h2 {
-  font-size: 28px;
+  font-size: 22px;
   color: #eef0f2;
   line-height: 50px;
+  font-weight: 300;
+}
+.banner_text .banner_logo {
+  background: url("../img/logo_square_white.png") no-repeat center center;
+  background-size: contain;
+  height: 100px;
+  margin: 15px 0;
 }
 
 .home_intro_text {
   margin-right: 30px;
+  width: 100%;
 }
 .home_intro_text h2 {
   font-size: 28px;
@@ -203,6 +211,7 @@ header .logo {
 .home_intro_img {
   width: 100%;
   height: 300px;
+  margin: auto 0;
   background: url("../img/home_intro.jpg") no-repeat center;
   background-size: contain;
 }
@@ -238,7 +247,7 @@ header .logo {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  min-height: 300px;
+  min-height: 400px;
   margin-bottom: 30px;
   border: 1px solid #B7D1DA;
 }
@@ -259,37 +268,180 @@ header .logo {
     width: 100%;
   }
 }
-.home_course .course_img {
-  width: 50%;
+
+.course_img {
   flex: 1;
-  background-position: center;
-  background-size: cover;
 }
 @media (max-width: 767px) {
-  .home_course .course_img {
-    height: 50%;
+  .course_img {
+    flex: auto;
+    height: 300px;
     width: 100%;
   }
 }
-.home_course .explore_img {
-  background-image: url("../img/explore.jpg");
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 40px;
+  text-align: center;
+  color: #eef0f2;
 }
-.home_course .ow_img {
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #eef0f2;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide.ow_img01 {
   background-image: url("../img/ow.jpg");
 }
-.home_course .aow_img {
+.swiper-slide.ow_img02 {
+  background-image: url("../img/ow02.jpg");
+}
+.swiper-slide.ow_img03 {
+  background-image: url("../img/ow03.jpg");
+}
+.swiper-slide.ow_img04 {
+  background-image: url("../img/ow04.jpg");
+}
+.swiper-slide.ow_img05 {
+  background-image: url("../img/ow05.jpg");
+}
+.swiper-slide.ow_img06 {
+  background-image: url("../img/ow06.jpg");
+}
+.swiper-slide.ow_img07 {
+  background-image: url("../img/ow07.jpg");
+}
+.swiper-slide.ow_img08 {
+  background-image: url("../img/ow08.jpg");
+}
+.swiper-slide.ow_img09 {
+  background-image: url("../img/ow09.jpg");
+}
+.swiper-slide.ow_img10 {
+  background-image: url("../img/ow10.jpg");
+}
+.swiper-slide.aow_img01 {
+  background-image: url("../img/aow01.jpg");
+}
+.swiper-slide.aow_img02 {
+  background-image: url("../img/aow02.jpg");
+}
+.swiper-slide.aow_img03 {
+  background-image: url("../img/aow03.jpg");
+}
+.swiper-slide.aow_img04 {
+  background-image: url("../img/aow04.jpg");
+}
+.swiper-slide.explore_img01 {
+  background-image: url("../img/explore01.jpg");
+}
+.swiper-slide.explore_img02 {
+  background-image: url("../img/explore02.jpg");
+}
+.swiper-slide.explore_img03 {
+  background-image: url("../img/explore03.jpg");
+}
+.swiper-slide.explore_img04 {
+  background-image: url("../img/explore04.jpg");
+}
+.swiper-slide.explore_img05 {
+  background-image: url("../img/explore05.jpg");
+}
+.swiper-slide.explore_img06 {
+  background-image: url("../img/explore06.jpg");
+}
+.swiper-slide.explore_img07 {
+  background-image: url("../img/explore07.jpg");
+}
+.swiper-slide.instructor_img01 {
+  background-image: url("../img/instructor01.jpg");
+  background-size: contain;
+}
+.swiper-slide.instructor_img02 {
+  background-image: url("../img/instructor02.jpg");
+  background-size: contain;
+}
+.swiper-slide.instructor_img03 {
+  background-image: url("../img/instructor03.jpg");
+  background-size: contain;
+}
+.swiper-slide.instructor_img04 {
+  background-image: url("../img/instructor04.jpg");
+  background-size: contain;
+}
+.swiper-slide.instructor_img05 {
+  background-image: url("../img/instructor05.jpg");
+  background-size: contain;
+}
+.swiper-slide.instructor_img06 {
+  background-image: url("../img/instructor06.jpg");
+  background-size: contain;
+}
+.swiper-slide.travel_img01 {
+  background-image: url("../img/travel01.jpg");
+}
+.swiper-slide.travel_img02 {
+  background-image: url("../img/travel02.jpg");
+}
+.swiper-slide.travel_img03 {
+  background-image: url("../img/travel03.jpg");
+}
+.swiper-slide.travel_img04 {
+  background-image: url("../img/travel04.jpg");
+}
+.swiper-slide.travel_img05 {
+  background-image: url("../img/travel05.jpg");
+}
+.swiper-slide.travel_img06 {
+  background-image: url("../img/travel06.jpg");
+}
+.swiper-slide.travel_img07 {
+  background-image: url("../img/travel07.jpg");
+}
+
+.explore_img {
+  background-image: url("../img/explore.jpg");
+}
+
+.aow_img {
   background-image: url("../img/aow.jpg");
 }
-.home_course .course_intro {
+
+.course_intro {
   margin-top: 20px;
 }
-.home_course .course_btn {
+
+.course_btn {
   margin-top: 20px;
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid #B7D1DA;
   color: #eef0f2;
   background-color: transparent;
+}
+
+.rescue_video {
+  flex: 1;
+}
+.rescue_video iframe {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .rescue_video {
+    flex: auto;
+    height: 300px;
+  }
 }
 
 #other h2 {
@@ -411,18 +563,6 @@ header .logo {
   }
 }
 
-.instructor_intro_img {
-  width: 50%;
-  height: 300px;
-  background: url("../img/田田02.jpg") no-repeat center;
-  background-size: cover;
-}
-@media (max-width: 767px) {
-  .instructor_intro_img {
-    width: 100%;
-  }
-}
-
 #faq h2 {
   text-align: center;
   color: #17415a;
@@ -459,13 +599,28 @@ header .logo {
 }
 
 footer {
-  background: #17415a;
+  background: url("../img/footer.jpg") no-repeat center center;
+  background-size: cover;
+  filter: blur(5%);
   text-align: center;
-  color: #B7D1DA;
+  color: #eef0f2;
 }
-footer h2 {
-  font-size: 14vw;
+footer .footer_logo {
+  height: 100px;
+  background-image: url("../img/logo_square_white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: 20px;
 }
 footer p {
   font-size: 20px;
+}
+footer .line_qrcode {
+  height: 50px;
+  background-image: url("../img/lineqrcode.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-top: 20px;
 }/*# sourceMappingURL=all.css.map */

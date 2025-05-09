@@ -19,9 +19,10 @@
   <meta name="robots" content="index, follow">
 
   <link rel="shortcut icon" href="img/logo_square.png">
-
+  
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/all.css">
 
   <title>Rich Diving|首頁</title>
@@ -30,7 +31,7 @@
 <body>
   <header class="show_color">
     <h1>
-      <a href="index.html">
+      <a href="#banner">
         <i class="logo"></i>
       </a>
     </h1>
@@ -43,8 +44,9 @@
   </header>
 
   <!-- home banner -->
-  <div class="home_banner">
+  <div id="banner" class="home_banner">
     <div class="banner_text">
+      <div class="banner_logo"></div>
       <p>RichDiving Enrich Your Sea</p>
       <h2>每一次潛水，都是心靈的豐收</h2>
     </div>
@@ -56,13 +58,45 @@
       <div class="home_intro_text">
         <h2>關於我們</h2>
         <p>
-          自從 2020 年開始扎根在 小琉球這片蔚藍天堂，RichDiving 就致力於把水肺潛水變成一種
-          <span class="text_highlight">安全又享受的生活體驗</span>。我們堅持
-          <span class="text_highlight">最高安全規格</span>，搭配
-          <span class="text_highlight">小班制教學</span>
-          從器材講解到下水實作，每一個步驟都由專業教練細心引導，，讓你在安心中學習、在自在中進步。</p>
-        <p>不論你是初次潛水的新手，還是想繼續進修的潛水控，我們都提供最高品質的服務與教學，讓每一位學生、每一位潛伴都能輕鬆自在地走進大海，盡情享受與海龜共游的快樂時光。在 RichDiving，我們相信潛水不只是技能，更是一種<span class="text_highlight"> 放鬆、療癒又充滿驚喜 </span>的海洋生活。</p>
-        <p>現在，就是潛入的時候！</p>
+          <span class="text_highlight">RichDiving</span>自2020年創立，
+          扎根在小琉球這片蔚藍的海洋天堂，
+          品牌主理人：田田，
+          堅持自己的信念，
+          極力的想將水肺潛水，
+          透過客觀的方式，
+          分享給每位來潛水的你。
+        </p>
+        <p>安全、自在、輕鬆、舒服、放鬆、享受
+          是品牌最高信念及價值，
+          在安全上，我們<span class="text_highlight">堅持零風險</span>；
+          教學上，搭配<span class="text_highlight">小班制</span>措施，
+          能確保安全及教學品質穩定，
+          在專業教練的細心講解帶領下，
+          從裝備器材講解到下水實務應用，
+          讓你<span class="text_highlight">輕鬆自在舒服
+            </span>的享受海洋世界</p>
+          <p>
+            無論你是初次接觸的新手，
+            還是想精進自己的潛水技巧，
+            RichDiving擁有足夠的潛水實務經驗、
+            專業的知識理論，
+            透過一次次海洋實習訓練，
+            <span class="text_highlight">因材施教</span>，
+            盡力幫助每一位潛水員學習及成長。
+          </p>
+          <p>
+            我們希望能透過專業，
+            用客觀的角度，
+            將美麗的海洋分享給每一個你，
+            選擇我們！
+            一起了解海洋、守護海洋，最後享受海洋～
+          </p>
+          <p>
+            Keep Diving, Keep Going!
+          </p>
+          <p>
+            No Dive, No Life!
+          </p>
       </div>
 
       <div class="home_intro_img"></div>
@@ -75,45 +109,159 @@
       <h2>熱門課程</h2>
       <ul>
         <li>
-          <div class="course_img ow_img"></div>
+          <div class="swiper course_img">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide ow_img01"></div>
+              <div class="swiper-slide ow_img02"></div>
+              <div class="swiper-slide ow_img03"></div>
+              <div class="swiper-slide ow_img04"></div>
+              <div class="swiper-slide ow_img05"></div>
+              <div class="swiper-slide ow_img06"></div>
+              <div class="swiper-slide ow_img07"></div>
+              <div class="swiper-slide ow_img08"></div>
+              <div class="swiper-slide ow_img09"></div>
+              <div class="swiper-slide ow_img10"></div>
+            </div>
+            <!-- 原點點 -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-caret-left"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-caret-right"></i></div>
+          </div>
           <div class="course_text">
             <h3>PADI 開放水域潛水員</h3>
             <h4>Open Water Diver Course</h4>
-            <p>踏入水肺潛水世界的第一站，學會正確裝備使用、潛水技巧與安全知識。</p>
+            <p>探索海洋的第一站，學會正確裝備使用、潛水技巧與安全知識。</p>
 
             <div class="course_intro">
-              <p>課程內容：平靜水域、海洋實習*4、學科、筆試測驗</p>
-              <p><span class="fw-bold">免費送！！</span>小琉球來回船票、摩托車使用、背包房住宿兩晚</p>
+              <p>課程內容：平靜水域*1、海洋實習*4、學科、筆試測驗</p>
+              <p>免費送！！小琉球來回船票、摩托車使用、背包房住宿兩晚</p>
             </div>
 
             <a href="https://www.instagram.com/rvca1003/" class="course_btn">立即私訊預約</a>
           </div>
         </li>
         <li>
-          <div class="course_img aow_img"></div>
+          <div class="swiper course_img">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide aow_img01"></div>
+              <div class="swiper-slide aow_img02"></div>
+              <div class="swiper-slide aow_img03"></div>
+              <div class="swiper-slide aow_img04"></div>
+            </div>
+            <!-- 原點點 -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-caret-left"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-caret-right"></i></div>
+          </div>
           <div class="course_text">
             <h3>PADI 雙證照特別班</h3>
             <h4>AOW + 高氧證照</h4>
             <p>有了 OW 證照，卻沒辦法夜潛或去沈船探險嗎？或者想多玩一下但在大深度的潛點無法久留？</p>
 
             <div class="course_intro">
-              <p>課程內容：海洋實習*5、潛水理論教學、知識複習、高氧空氣潛水理論和操作、知識發展、學科測驗</p>
-              <p><span class="fw-bold">免費送！！</span>小琉球來回船票、摩托車使用、背包房住宿兩晚</p>
+              <p>課程內容：海洋實習*5、潛水理論教學、知識複習、高氧潛水理論、知識發展、學科測驗</p>
+              <p>免費送！！小琉球來回船票、摩托車使用、背包房住宿兩晚</p>
             </div>
 
             <a href="https://www.instagram.com/rvca1003/" class="course_btn">立即私訊預約</a>
           </div>
         </li>
         <li>
-          <div class="course_img explore_img"></div>
+          <div class="swiper course_img">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide explore_img01"></div>
+              <div class="swiper-slide explore_img02"></div>
+              <div class="swiper-slide explore_img03"></div>
+              <div class="swiper-slide explore_img04"></div>
+              <div class="swiper-slide explore_img05"></div>
+              <div class="swiper-slide explore_img06"></div>
+              <div class="swiper-slide explore_img07"></div>
+            </div>
+            <!-- 原點點 -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-caret-left"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-caret-right"></i></div>
+          </div>
           <div class="course_text">
             <h3>體驗潛水</h3>
             <h4>Explore Diving</h4>
             <p>想嘗試潛水但還沒準備好要考證照嗎？來體驗吧！不需要潛水證照就能感受水下世界的精彩～</p>
 
             <div class="course_intro">
-              <p>體驗內容：潛水簡介、水下導覽、全套裝備使用、氣瓶使用</p>
-              <p>請自備個人泳裝、浴巾，建議近視者配戴隱形眼鏡</p>
+              <p>
+                體驗內容：全程專業教練一帶一服務、水下導覽、影片及精修照片
+              </p>
+              <p>活動時間：2.5小時（水下時間30～40分鐘）</p>
+              <p>活動時間包含：
+                體驗講解、套量裝備、水性適應、海洋潛水時間、潛點交通時間</p>
+            </div>
+
+            <a href="https://www.instagram.com/rvca1003/" class="course_btn">立即私訊預約</a>
+          </div>
+        </li>
+        <li>
+          <div class="rescue_video">
+            <iframe src="https://www.youtube.com/embed/hYlwNmySwFs?si=Iarh3u-nH32PJw8P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="course_text">
+            <h3>PADI 救援潛水員證照</h3>
+            <h4>Rescue Diver</h4>
+            <div class="course_intro">
+              <p>
+                此課程會教導你水下任何情境的自救方式，以及模擬情境讓你去協助潛伴。</p>
+              <p>
+              透過互動式的教學及討論，更清楚掌握水下救援情節、學習到很多實用的潛水救援技巧，進一步成為值得依靠的潛伴！</p>
+            </div>
+
+            <a href="https://www.instagram.com/rvca1003/" class="course_btn">立即私訊預約</a>
+          </div>
+        </li>
+        <li>
+          <div class="swiper course_img">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide travel_img01"></div>
+              <div class="swiper-slide travel_img02"></div>
+              <div class="swiper-slide travel_img03"></div>
+              <div class="swiper-slide travel_img04"></div>
+              <div class="swiper-slide travel_img05"></div>
+              <div class="swiper-slide travel_img06"></div>
+              <div class="swiper-slide travel_img07"></div>
+            </div>
+            <!-- 原點點 -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-caret-left"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-caret-right"></i></div>
+          </div>
+          <div class="course_text">
+            <h3>RichDiving潛旅活動</h3>
+            <h4>國內外潛水旅遊</h4>
+            <p>我們有眾多潛旅經驗！
+              每次開團人數眾多，團團滿團～
+              有興趣的朋友歡迎私訊報名！</p>
+
+            <div class="course_intro">
+              <p>
+                開團經歷：
+                </p>
+                <p>
+                  2023 菲律賓薄荷島、帛琉團
+                </p>
+                <p>
+                  2024 菲律賓PG島、印尼峇里島、馬爾地夫（四方線）
+                </p>
+                <p>
+                  2025 菲律賓PG島、帛琉團
+                </p>
+                <p>2026.3月-菲律賓薄荷島、12月-馬爾地夫（四方線）</p>
+                <p>2027.2月-馬爾地夫（深南線）</p>
             </div>
 
             <a href="https://www.instagram.com/rvca1003/" class="course_btn">立即私訊預約</a>
@@ -126,7 +274,7 @@
   <!-- 其他服務 -->
    <section id="other">
     <div class="container">
-      <h2>其他服務</h2>
+      <h2>詳細內容請私訊IG或LINE <br/> 會有專人為你服務</h2>
       <div class="grid_container">
         <div class="grid_item grid_1"></div>
         <div class="grid_item grid_2"></div>
@@ -143,19 +291,33 @@
   <section id="instructor">
     <div class="container flex">
       <div class="instructor_intro_text">
-        <h2>田田教練</h2>
+        <h2>RichDiving主理人-田田（水肺教練）</h2>
         <ul>
-          <li>2020.11月創立RichDiving品牌 成為品牌主理人</li>
           <li>2021-名仕潛水員訓練官</li>
+          <li>2025取得TDI技術潛水側掛教練資格</li>
           <li>2021榮獲PADI菁英教練獎項（50等級）</li>
           <li>2022榮獲PADI菁英教練獎項（100等級）</li>
           <li>2023榮獲PADI菁英教練獎項（100等級）</li>
           <li>2024榮獲PADI菁英教練獎項（100等級）</li>
-          <li>2025取得TDI技術潛水側掛教練資格</li>
         </ul>
       </div>
 
-      <div class="instructor_intro_img"></div>
+      <div class="swiper course_img">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide instructor_img01"></div>
+          <div class="swiper-slide instructor_img02"></div>
+          <div class="swiper-slide instructor_img03"></div>
+          <div class="swiper-slide instructor_img04"></div>
+          <div class="swiper-slide instructor_img05"></div>
+          <div class="swiper-slide instructor_img06"></div>
+        </div>
+        <!-- 原點點 -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"><i class="fa-solid fa-caret-left"></i></div>
+        <div class="swiper-button-next"><i class="fa-solid fa-caret-right"></i></div>
+      </div>
     </div>
   </section>
 
@@ -184,10 +346,13 @@
 
   <footer>
     <div class="container">
-      <h2>RICH DIVING</h2>
-      <p><a href="https://www.instagram.com/rvca1003/"><i class="fa-brands fa-instagram"></i> rvca1002</a></p>
+      <div class="footer_logo"></div>
+      <p><a href="https://www.instagram.com/rvca1003/"><i class="fa-brands fa-instagram"></i> rvca1003</a>  /  <a href=""><i class="fa-brands fa-line"></i> rvca1003</a></p>
+      <div class="line_qrcode"></div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/all.js"></script>
 </body>
 </html>

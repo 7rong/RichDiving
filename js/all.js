@@ -13,3 +13,16 @@ questions.forEach((q) => {
     answer.classList.toggle("open");
   });
 });
+
+// swiper
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination', // 設定原點點容器
+    clickable: true,          // 讓使用者可以點擊切換
+  },
+});
